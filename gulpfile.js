@@ -2,24 +2,33 @@ var gulp          = require('gulp');
 var gutil         = require("gulp-util");
 var cp            = require('child_process');
 var browserSync   = require('browser-sync');
-var webpack       = require("webpack");
-var webpackConfig = require('./webpack.config.js');
+var sass          = require('gulp-sass');
+var sourcemaps    = require('gulp-sourcemaps');
 
 var config = {
-    source: 'src',
-    destination: 'dist'
+    source: {
+        path: './src',
+        assets: './src/_assets',
+    },
+    destination: {
+        path: './dist',
+        assets: './dist/assets'
+    }
 };
 
-function spawnWebpack(cli, callback) {
-    cp.spawn('webpack', cli, {stdio: 'inherit'}).on('done', callback);
-}
-
-gulp.task('webpack:dev', ['jekyll'], function(callback) {
-    spawnWebpack(['--debug', '--devtool', 'inline-source-map', '--output-pathinfo'], callback);
+/** BUILD TASKS */
+gulp.task('sass:dev', ['jekyll'], function() {
+    return gulp.src(config.source.assets + '/sass/{,*/}*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(config.destination.assets + '/css'));
 });
 
-gulp.task('webpack:prod', ['jekyll'], function(callback) {
-    spawnWebpack(['-p'], callback);
+gulp.task('sass:prod', function() {
+    return gulp.src(config.source.assets + '/sass/{,*/}*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest(config.destination.assets + '/css'));
 });
 
 gulp.task('jekyll', function(callback) {
@@ -27,8 +36,8 @@ gulp.task('jekyll', function(callback) {
 
     cp.spawn('jekyll', [
         'build',
-        '--source='+config.source,
-        '--destination='+config.destination
+        '--source='+config.source.path,
+        '--destination='+config.destination.path
     ], {stdio: 'inherit'}).on('exit', callback);
 });
 
@@ -36,13 +45,17 @@ gulp.task('jekyll:rebuild', ['jekyll'], function() {
     browserSync.reload();
 });
 
-gulp.task('browser-sync', ['jekyll'], function() {
+gulp.task('browser-sync', ['jekyll', 'assets:dev'], function() {
     browserSync({
         server: {
-            baseDir: config.destination
+            baseDir: config.destination.path
         }
     });
 });
 
-gulp.task('serve', ['webpack:dev', 'browser-sync']);
-gulp.task('default', ['webpack:prod']);
+
+/** CLI TASKS */
+gulp.task('assets:dev', ['sass:dev'], function() {});
+gulp.task('assets:prod', [], function() {});
+gulp.task('serve', ['assets:dev', 'browser-sync']);
+gulp.task('default', ['assets:prod']);

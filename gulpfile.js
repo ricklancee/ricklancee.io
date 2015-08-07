@@ -7,6 +7,8 @@ var sourcemaps  = require('gulp-sourcemaps');
 var imagemin    = require('gulp-imagemin');
 var pngquant    = require('imagemin-pngquant');
 var htmlmin     = require('gulp-html-minifier');
+var rev         = require('gulp-rev');
+var revReplace  = require('gulp-rev-replace');
 
 var config = {
     source: {
@@ -57,8 +59,24 @@ gulp.task('imagemin', ['jekyll'], function() {
 });
 
 gulp.task('htmlmin', ['jekyll'], function() {
-    gulp.src(config.destination.path + '/**/*.html')
+    return gulp.src(config.destination.path + '/**/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest(config.destination.path));
+});
+
+gulp.task('rev', ['assets:prod'], function() {
+    return gulp.src(config.destination.assets + '/{css,images}/{,*/}*', {base: config.destination.assets})
+        .pipe(rev())
+        .pipe(gulp.dest(config.destination.assets))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest(config.destination.assets));
+});
+
+gulp.task('rev:replace', ['rev'], function() {
+    var manifest = gulp.src(config.destination.assets + "/rev-manifest.json");
+
+    return gulp.src(config.destination.path + "/**")
+        .pipe(revReplace({manifest: manifest}))
         .pipe(gulp.dest(config.destination.path));
 });
 
@@ -73,13 +91,16 @@ gulp.task('jekyll', function(callback) {
     ], {stdio: 'inherit'}).on('exit', callback);
 });
 
-gulp.task('browser-sync', ['jekyll', 'assets:dev'], function() {
+function startBrowserSync() {
     browserSync({
         server: {
             baseDir: config.destination.path
         }
     });
-});
+}
+
+gulp.task('browser-sync:dev', ['jekyll', 'assets:dev'], startBrowserSync);
+gulp.task('browser-sync:prod', ['jekyll', 'assets:prod'], startBrowserSync);
 
 gulp.task('jekyll:rebuild', ['jekyll'], function() {
     browserSync.reload();
@@ -96,7 +117,7 @@ gulp.task('watch', function() {
 /** CLI TASKS */
 gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy']);
 gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy', 'htmlmin']);
-gulp.task('serve:prod', ['assets:prod', 'browser-sync']);
-gulp.task('serve', ['assets:dev', 'browser-sync', 'watch']);
+gulp.task('serve:prod', ['production', 'browser-sync:prod']);
+gulp.task('serve', ['assets:dev', 'browser-sync:dev', 'watch']);
 gulp.task('default', ['serve']);
-gulp.task('production', ['assets:prod']);
+gulp.task('production', ['assets:prod', 'rev', 'rev:replace']);

@@ -18,7 +18,7 @@ var config = {
         assets: './dist/assets'
     },
     copyFiles: [
-        './src/_assets/fonts/*'
+        './src/_assets/fonts/*/**'
     ]
 };
 

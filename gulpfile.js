@@ -27,8 +27,9 @@ var config = {
 gulp.task('sass:dev', ['jekyll'], function() {
     return gulp.src(config.source.assets + '/sass/{,*/}*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
+        .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(config.destination.assets + '/css'));
 });
 
@@ -40,16 +41,18 @@ gulp.task('sass:prod', ['jekyll'], function() {
 
 gulp.task('copy', ['jekyll'], function() {
     return gulp.src(config.copyFiles, {base: config.source.assets})
+        .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(config.destination.assets));
 });
 
 gulp.task('imagemin', ['jekyll'], function() {
-    return gulp.src(config.source.assets + '/images/{,*/}*')
+    return gulp.src(config.source.assets + '/images/{,*/}*.{jpg,jpeg,gif,png,svg}')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
+        .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(config.destination.assets + '/images'));
 });
 
@@ -70,10 +73,6 @@ gulp.task('jekyll', function(callback) {
     ], {stdio: 'inherit'}).on('exit', callback);
 });
 
-gulp.task('jekyll:rebuild', ['jekyll'], function() {
-    browserSync.reload();
-});
-
 gulp.task('browser-sync', ['jekyll', 'assets:dev'], function() {
     browserSync({
         server: {
@@ -82,10 +81,22 @@ gulp.task('browser-sync', ['jekyll', 'assets:dev'], function() {
     });
 });
 
+gulp.task('jekyll:rebuild', ['jekyll'], function() {
+    browserSync.reload();
+});
+
+/** Watch tasks */
+gulp.task('watch', function() {
+    gulp.watch(config.source.assets + '/sass/{,*/}*.scss', ['sass:dev']);
+    gulp.watch(config.copyFiles, ['copy']);
+    gulp.watch(config.source.assets + '/images/{,*/}*.{jpg,jpeg,gif,png,svg}', ['imagemin']);
+    gulp.watch(config.source.assets + '/**/*.{yml,md,html,xml}', ['jekyll:rebuild']);
+});
+
 /** CLI TASKS */
 gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy'], function() {});
 gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy', 'htmlmin'], function() {});
 gulp.task('serve:prod', ['assets:prod', 'browser-sync']);
-gulp.task('serve', ['assets:dev', 'browser-sync']);
+gulp.task('serve', ['assets:dev', 'browser-sync', 'watch']);
 gulp.task('default', ['serve']);
 gulp.task('production', ['assets:prod']);

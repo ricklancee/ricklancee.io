@@ -6,6 +6,7 @@ var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var imagemin    = require('gulp-imagemin');
 var pngquant    = require('imagemin-pngquant');
+var htmlmin     = require('gulp-html-minifier');
 
 var config = {
     source: {
@@ -52,6 +53,12 @@ gulp.task('imagemin', ['jekyll'], function() {
         .pipe(gulp.dest(config.destination.assets + '/images'));
 });
 
+gulp.task('htmlmin', ['jekyll'], function() {
+    gulp.src(config.destination.path + '/**/*.html')
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest(config.destination.path));
+});
+
 /** Jekyll tasks */
 gulp.task('jekyll', function(callback) {
     browserSync.notify('<span style="color: grey">Running:</span> $ jekyll build');
@@ -77,7 +84,8 @@ gulp.task('browser-sync', ['jekyll', 'assets:dev'], function() {
 
 /** CLI TASKS */
 gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy'], function() {});
-gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy'], function() {});
+gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy', 'htmlmin'], function() {});
+gulp.task('serve:prod', ['assets:prod', 'browser-sync']);
 gulp.task('serve', ['assets:dev', 'browser-sync']);
 gulp.task('default', ['serve']);
 gulp.task('production', ['assets:prod']);

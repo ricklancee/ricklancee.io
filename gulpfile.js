@@ -1,9 +1,11 @@
-var gulp          = require('gulp');
-var gutil         = require("gulp-util");
-var cp            = require('child_process');
-var browserSync   = require('browser-sync');
-var sass          = require('gulp-sass');
-var sourcemaps    = require('gulp-sourcemaps');
+var gulp        = require('gulp');
+var gutil       = require("gulp-util");
+var cp          = require('child_process');
+var browserSync = require('browser-sync');
+var sass        = require('gulp-sass');
+var sourcemaps  = require('gulp-sourcemaps');
+var imagemin    = require('gulp-imagemin');
+var pngquant    = require('imagemin-pngquant');
 
 var config = {
     source: {
@@ -13,10 +15,14 @@ var config = {
     destination: {
         path: './dist',
         assets: './dist/assets'
-    }
+    },
+    copyFiles: [
+        './src/_assets/fonts/*'
+    ]
 };
 
-/** BUILD TASKS */
+
+/** ASSETS TASKS */
 gulp.task('sass:dev', ['jekyll'], function() {
     return gulp.src(config.source.assets + '/sass/{,*/}*.scss')
         .pipe(sourcemaps.init())
@@ -25,12 +31,28 @@ gulp.task('sass:dev', ['jekyll'], function() {
         .pipe(gulp.dest(config.destination.assets + '/css'));
 });
 
-gulp.task('sass:prod', function() {
+gulp.task('sass:prod', ['jekyll'], function() {
     return gulp.src(config.source.assets + '/sass/{,*/}*.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest(config.destination.assets + '/css'));
 });
 
+gulp.task('copy', ['jekyll'], function() {
+    return gulp.src(config.copyFiles, {base: config.source.assets})
+        .pipe(gulp.dest(config.destination.assets));
+});
+
+gulp.task('imagemin', ['jekyll'], function() {
+    return gulp.src(config.source.assets + '/images/{,*/}*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(config.destination.assets + '/images'));
+});
+
+/** Jekyll tasks */
 gulp.task('jekyll', function(callback) {
     browserSync.notify('<span style="color: grey">Running:</span> $ jekyll build');
 
@@ -53,9 +75,9 @@ gulp.task('browser-sync', ['jekyll', 'assets:dev'], function() {
     });
 });
 
-
 /** CLI TASKS */
-gulp.task('assets:dev', ['sass:dev'], function() {});
-gulp.task('assets:prod', [], function() {});
+gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy'], function() {});
+gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy'], function() {});
 gulp.task('serve', ['assets:dev', 'browser-sync']);
-gulp.task('default', ['assets:prod']);
+gulp.task('default', ['serve']);
+gulp.task('production', ['assets:prod']);

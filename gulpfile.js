@@ -94,8 +94,8 @@ gulp.task('watch', function() {
 });
 
 /** CLI TASKS */
-gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy'], function() {});
-gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy', 'htmlmin'], function() {});
+gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy']);
+gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy', 'htmlmin']);
 gulp.task('serve:prod', ['assets:prod', 'browser-sync']);
 gulp.task('serve', ['assets:dev', 'browser-sync', 'watch']);
 gulp.task('default', ['serve']);

@@ -1,0 +1,80 @@
+$font-line-height: 1.5;
+$font-color: #0A173A;
+$font-family-primary: 'Raleway';
+$font-family-secondary: 'PT Serif Caption';
+
+/** PT Serif Caption */
+@font-face {
+    font-family: 'PT Serif Caption';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Serif Caption Web Regular'),
+        url('/assets/fonts/PT_Serif-Caption/PT_Serif-Caption-Web-Regular.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Caption Web Italic'),
+        url('/assets/fonts/PT_Serif-Caption/PT_Serif-Caption-Web-Italic.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+/** Raleway */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Raleway Thin'),
+        url('/assets/fonts/Raleway/Raleway-Thin.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'),
+        url('/assets/fonts/Raleway/Raleway-Light.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway Regular'),
+        url('/assets/fonts/Raleway/Raleway-Regular.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Raleway Medium'),
+        url('/assets/fonts/Raleway/Raleway-Medium.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Raleway SemiBold'),
+        url('/assets/fonts/Raleway/Raleway-SemiBold.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Raleway Bold'),
+        url('/assets/fonts/Raleway/Raleway-Bold.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Raleway ExtraBold'),
+        url('/assets/fonts/Raleway/Raleway-ExtraBold.ttf') format('ttf');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}

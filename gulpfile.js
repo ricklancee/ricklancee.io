@@ -26,7 +26,7 @@ var config = {
 
 
 /** ASSETS TASKS */
-gulp.task('sass:dev', ['jekyll'], function() {
+gulp.task('sass:dev', function() {
     return gulp.src(config.source.assets + '/sass/{,*/}*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -35,19 +35,19 @@ gulp.task('sass:dev', ['jekyll'], function() {
         .pipe(gulp.dest(config.destination.assets + '/css'));
 });
 
-gulp.task('sass:prod', ['jekyll'], function() {
+gulp.task('sass:prod', function() {
     return gulp.src(config.source.assets + '/sass/{,*/}*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest(config.destination.assets + '/css'));
 });
 
-gulp.task('copy', ['jekyll'], function() {
+gulp.task('copy', function() {
     return gulp.src(config.copyFiles, {base: config.source.assets})
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(config.destination.assets));
 });
 
-gulp.task('imagemin', ['jekyll'], function() {
+gulp.task('imagemin', function() {
     return gulp.src(config.source.assets + '/images/{,*/}*.{jpg,jpeg,gif,png,svg}')
         .pipe(imagemin({
             progressive: true,
@@ -111,13 +111,16 @@ gulp.task('watch', function() {
     gulp.watch(config.source.assets + '/sass/{,*/}*.scss', ['sass:dev']);
     gulp.watch(config.copyFiles, ['copy']);
     gulp.watch(config.source.assets + '/images/{,*/}*.{jpg,jpeg,gif,png,svg}', ['imagemin']);
-    gulp.watch(config.source.assets + '/**/*.{yml,md,html,xml}', ['jekyll:rebuild']);
+    gulp.watch(config.source + '/**/*.{yml,md,html,xml}', ['assets:dev', 'jekyll:rebuild']);
 });
 
 /** CLI TASKS */
+gulp.task('default', ['serve']);
+gulp.task('serve', ['build', 'browser-sync:dev', 'watch']);
+gulp.task('serve:prod', ['production', 'browser-sync:prod']);
+gulp.task('build', ['jekyll'], function() {
+    gulp.run('assets:dev');
+});
+gulp.task('build:production', ['assets:prod', 'rev', 'rev:replace']);
 gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy']);
 gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy', 'htmlmin']);
-gulp.task('serve:prod', ['production', 'browser-sync:prod']);
-gulp.task('serve', ['assets:dev', 'browser-sync:dev', 'watch']);
-gulp.task('default', ['serve']);
-gulp.task('production', ['assets:prod', 'rev', 'rev:replace']);

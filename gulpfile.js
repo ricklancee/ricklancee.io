@@ -108,7 +108,7 @@ gulp.task('watch', function() {
 /** CLI TASKS */
 gulp.task('default', ['serve']);
 gulp.task('serve', ['build', 'browser-sync:dev', 'watch']);
-gulp.task('serve:prod', ['production', 'browser-sync:prod']);
+gulp.task('serve:prod', ['build:production', 'browser-sync:prod']);
 gulp.task('build', ['jekyll'], function() {
     gulp.run('assets:dev');
 });

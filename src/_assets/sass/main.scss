@@ -48,10 +48,27 @@ figure {
     overflow: hidden;
 }
 
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: calc(100vh - 100px);
+}
+video + p em:first-child,
+img + p em:first-child,
+figure + p em:first-child {
+    color: $copy-color-accent;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+
 figure img {
     width: 100%;
     display: block;
     margin: 0;
+    max-height: calc(100vh - 40px);
 }
 
 .seperator {
@@ -138,7 +155,7 @@ figure img {
 }
 
 .case-list li {
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
 }
 
 .case {
@@ -181,4 +198,9 @@ figure.rounded {
 .post {
     font-size: 18px;
     font-family: $copy-secondary;
+}
+
+.post img {
+    display: block;
+    max-width: 100%;
 }

@@ -10,7 +10,9 @@ My name is Rick Lancee, i'm currently an design student studying Communication a
 
 I like design, design that focuses on users. I like code, code that makes your web experience better. I'm especially interested in things like [progressive web apps](https://developers.google.com/web/progressive-web-apps/). I want to learn more about a whole lot of things, design, code, tooling, application architecture... anything basically.
 
-My current skills range from design, Back-end (PHP, Laravel), Front-end -- which i like to focus on best-practices and performance -- and some archicture and server infrastructure here and there.
+My current skills range from design, Back-end (PHP, Laravel), Front-end -- which i like to focus on best-practices and performance -- to some archicture and server-infra stuff here and there.
+
+Find me on twitter [@ricklancee](https://twitter.com/RickLancee) or on [Github](https://github.com/ricklancee) 
 
 <figure style="width: 200px;" class="rounded">
 <img src="{{ site.baseurl | prepend: site.url  }}/assets/images/me.jpg" alt="Rick Lancee">

@@ -16,9 +16,9 @@ Darkest nights was a short horror minigame that we (Bart van Dongen, Wesley Hö
 
 In the game you are "Tet", who is looking for his teddy bear, "Teddy" in the middle of the night. Since teddy is still a litle kid everything looks scary in the dark and his imagination runs wild. 
 
-The game itself is pretty easy, on each level Teddy is hidden and you have to find him in complete darkness. After each level it will become harder, the rooms will be bigger and there are more monsters to look out for.
+The game itself is pretty basic, on each level Teddy is hidden and you have to find him in complete darkness. After each level it will become harder, the rooms will be bigger and there are more monsters to look out for.
 
-The monsters in the game can be studden by shining you flashlight on them if your close, but they will continue to move a short time after you go away. 
+The monsters in the game can be stunned by shining your flashlight on them if your close, but they will continue to move a short time after you go away. 
 
 <video autoplay="true" loop="true">
     <source src="{{ site.baseurl | prepend: site.url }}/assets/images/darkestnights/nights.mp4" type="video/mp4">

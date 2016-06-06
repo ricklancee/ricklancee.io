@@ -18,7 +18,7 @@ layout: default
                         <img src="{{ post.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ post.title }}">
                     </figure>
                     <h4 class="case__title">
-                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
                     </h4>
                     <p class="case__description">{{ post.description }}</p>
                     <span class="seperator"></span>

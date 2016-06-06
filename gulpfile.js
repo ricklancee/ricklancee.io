@@ -20,7 +20,7 @@ var config = {
         assets: './dist/assets'
     },
     copyFiles: [
-        './src/_assets/images/*/**'
+        './src/_assets/images/**/*'
     ]
 };
 

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:3000/</link>
     <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jun 2016 16:26:29 +0200</pubDate>
-    <lastBuildDate>Mon, 06 Jun 2016 16:26:29 +0200</lastBuildDate>
+    <pubDate>Mon, 06 Jun 2016 17:09:36 +0200</pubDate>
+    <lastBuildDate>Mon, 06 Jun 2016 17:09:36 +0200</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -77,6 +77,32 @@ You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ah
         <pubDate>Mon, 06 Jun 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:3000/case/overwatch-timeline</link>
         <guid isPermaLink="true">http://localhost:3000/case/overwatch-timeline</guid>
+        
+        
+        <category>case</category>
+        
+      </item>
+    
+      <item>
+        <title>Explore Amsterdam</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jun 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:3000/case/explore-amsterdam</link>
+        <guid isPermaLink="true">http://localhost:3000/case/explore-amsterdam</guid>
+        
+        
+        <category>case</category>
+        
+      </item>
+    
+      <item>
+        <title>Darkest Nights</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jun 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:3000/case/darkest-nights</link>
+        <guid isPermaLink="true">http://localhost:3000/case/darkest-nights</guid>
         
         
         <category>case</category>

@@ -11,10 +11,22 @@ $copy-secondary: Georgia, serif;
 html, body {
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     color: $copy-color;
     font-family: $copy-primary;
     line-height: 1.5;
+}
+
+body::before {
+    content: '';
+    height: 4px;
+    background-color: $primary-accent;
+    opacity: 0.47;
 }
 
 h1,
@@ -37,21 +49,9 @@ figure {
 }
 
 figure img {
-    min-width: 100%;
+    width: 100%;
     display: block;
     margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-body::before {
-    content: '';
-    height: 4px;
-    background-color: $primary-accent;
-    opacity: 0.47;
 }
 
 .seperator {
@@ -167,4 +167,13 @@ body::before {
     margin: 0 0 16px 0;
     font-size: 14px;
     color: $copy-color-accent;
+}
+
+.post figure {
+    margin: 1.225em auto;
+}
+
+figure.rounded {
+    border-radius: 50%;
+    overflow: hidden;
 }

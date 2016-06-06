@@ -15,7 +15,7 @@ layout: default
             <li>
                 <article class="case">
                     <figure class="case__image">
-                        <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}">
+                        <img src="{{ post.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ post.title }}">
                     </figure>
                     <h4 class="case__title">
                         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

@@ -4,10 +4,10 @@
     <title>Rick Lancee | design student, geek and front-end enthusiast</title>
     <description>I&#39;m a design student, geek and front-end enthusiast. I&#39;m mainly interested in design, progressive web apps and front-end tooling.
 </description>
-    <link>http://ricklancee.github.io/ricklancee.io/</link>
-    <atom:link href="http://ricklancee.github.io/ricklancee.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jun 2016 16:12:56 +0200</pubDate>
-    <lastBuildDate>Mon, 06 Jun 2016 16:12:56 +0200</lastBuildDate>
+    <link>http://localhost:3000/</link>
+    <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 06 Jun 2016 16:26:29 +0200</pubDate>
+    <lastBuildDate>Mon, 06 Jun 2016 16:26:29 +0200</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://ricklancee.github.io/ricklancee.io/case/prairietorrium</link>
-        <guid isPermaLink="true">http://ricklancee.github.io/ricklancee.io/case/prairietorrium</guid>
+        <link>http://localhost:3000/case/prairietorrium</link>
+        <guid isPermaLink="true">http://localhost:3000/case/prairietorrium</guid>
         
         
         <category>case</category>
@@ -75,8 +75,8 @@ You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ah
 
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://ricklancee.github.io/ricklancee.io/case/overwatch-timeline</link>
-        <guid isPermaLink="true">http://ricklancee.github.io/ricklancee.io/case/overwatch-timeline</guid>
+        <link>http://localhost:3000/case/overwatch-timeline</link>
+        <guid isPermaLink="true">http://localhost:3000/case/overwatch-timeline</guid>
         
         
         <category>case</category>

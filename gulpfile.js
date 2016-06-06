@@ -20,7 +20,7 @@ var config = {
         assets: './dist/assets'
     },
     copyFiles: [
-        './src/_assets/fonts/*/**'
+        './src/_assets/images/*/**'
     ]
 };
 
@@ -42,20 +42,12 @@ gulp.task('sass:prod', function() {
 });
 
 gulp.task('copy', function() {
+    if (!config.copyFiles.length)
+        return false;
+
     return gulp.src(config.copyFiles, {base: config.source.assets})
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(config.destination.assets));
-});
-
-gulp.task('imagemin', function() {
-    return gulp.src(config.source.assets + '/images/{,*/}*.{jpg,jpeg,gif,png,svg}')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(config.destination.assets + '/images'));
 });
 
 gulp.task('htmlmin', ['jekyll'], function() {
@@ -110,7 +102,6 @@ gulp.task('jekyll:rebuild', ['jekyll'], function() {
 gulp.task('watch', function() {
     gulp.watch(config.source.assets + '/sass/{,*/}*.scss', ['sass:dev']);
     gulp.watch(config.copyFiles, ['copy']);
-    gulp.watch(config.source.assets + '/images/{,*/}*.{jpg,jpeg,gif,png,svg}', ['imagemin']);
     gulp.watch(config.source + '/**/*.{yml,md,html,xml}', ['assets:dev', 'jekyll:rebuild']);
 });
 
@@ -122,5 +113,5 @@ gulp.task('build', ['jekyll'], function() {
     gulp.run('assets:dev');
 });
 gulp.task('build:production', ['assets:prod', 'rev', 'rev:replace']);
-gulp.task('assets:dev', ['sass:dev', 'imagemin', 'copy']);
-gulp.task('assets:prod', ['sass:prod', 'imagemin', 'copy', 'htmlmin']);
+gulp.task('assets:dev', ['sass:dev', 'copy']);
+gulp.task('assets:prod', ['sass:prod', 'copy', 'htmlmin']);

@@ -18,4 +18,4 @@ Places supposed to ranked based on location so relevant nearby places would be o
 
 The application itself was really fun to make, cards where swipable on mobile so you could dismiss them. You could favorite cards so you can find them later on again. One issue was that the library i used for swiping was nice, but it did not allow me to do certain animation that i would have like to incorperate into the app. Such as the card expanding on click. Next time however i will not opt for using a library, but rather create my own to solve the problem. 
 
-Working demo: https://ricklancee.github.io/explore-amsterdam/
+Working demo: [https://ricklancee.github.io/explore-amsterdam/](https://ricklancee.github.io/explore-amsterdam/)

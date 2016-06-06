@@ -5,4 +5,5 @@ title:  "BUDDY an E-Health app"
 image: /assets/images/cases/case-buddy.jpg
 description: For class project we had to design an app that would support patiecients with a chronic ilness, we decided on Social Anxiety discorders.
 ---
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

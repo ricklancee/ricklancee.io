@@ -1,0 +1,11 @@
+---
+layout: post
+category: case
+title:  "MOTI a Motivation App"
+image: /assets/images/cases/case-sporters.jpg
+description: For class project we had to design an app that would support olympic rowers in their quest towards a gold medal.
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oGuEnXagr-U" frameborder="0" allowfullscreen></iframe>
+
+Bla bla bla content...

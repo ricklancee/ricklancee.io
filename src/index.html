@@ -2,13 +2,27 @@
 layout: default
 ---
 <div id="home" class="page">
-<h1 class="page-heading">Posts</h1>
-
-    <ul class="post-list">
-        {% for post in site.posts %}
+    <header>
+        <p class="lead">
+            Hi (╯°□°）╯︵ ┻━┻ !<br>
+            I'm a design student, geek and front-end enthusiast. I'm mainly interested in design, progressive web apps and front-end tooling.
+        </p>
+        <span class="seperator"></span>
+        <h2 class="page-heading">Things I made...</h2>
+    </header>
+    <ul class="case-list">
+        {% for post in site.categories.case %}
             <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <article class="case">
+                    <figure class="case__image">
+                        <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}">
+                    </figure>
+                    <h4 class="case__title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h4>
+                    <p class="case__description">{{ post.description }}</p>
+                    <span class="seperator"></span>
+                </article>
             </li>
         {% endfor %}
     </ul>

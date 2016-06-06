@@ -1,3 +1,19 @@
 <footer class="site-footer">
-
+    <nav class="site-nav">
+        <ul>
+            <li>
+                <a href="{{ site.baseurl }}/">Home</a>
+            </li>
+            {% for page in site.pages %}
+                {% if page.title %}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            <li>
+                <a href="https://github.com/{{ site.github_username }}">Github</a>
+            </li>
+        </ul>
+    </nav>
 </footer>

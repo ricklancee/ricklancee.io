@@ -1,9 +1,20 @@
-@import 'fonts';
+$copy-color: #0B0900;
+$copy-color-accent: #767676;
+$primary-accent: #FFDE1D;
+$copy-primary: Arial, Helvetica, sans-serif;
+$copy-secondary: Georgia, serif;
 
-body {
-    font-family: $font-family-primary;
-    color: $font-color;
-    line-height: $font-line-height;
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: $copy-color;
+    font-family: $copy-primary;
+    line-height: 1.5;
 }
 
 h1,
@@ -12,5 +23,148 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family-secondary;
+    font-family: $copy-secondary;
+}
+
+a {
+    color: inherit;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+figure img {
+    min-width: 100%;
+    display: block;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: '';
+    height: 4px;
+    background-color: $primary-accent;
+    opacity: 0.47;
+}
+
+.seperator {
+    display: block;
+    height: 4px;
+    width: 27px;
+    background-color: $primary-accent;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    margin: 52px auto;
+}
+.site-footer {
+    max-width: 600px;
+    width: 100%;
+    margin: 52px auto;
+}
+.site-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $copy-primary;
+}
+.site-title a {
+    text-decoration: none;
+}
+
+.site-header .site-nav {
+    text-align: right;
+}
+.site-footer .site-nav {
+    text-align: center;
+}
+
+.site-nav {
+    font-size: 13px;
+    font-weight: normal;
+}
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li {
+    text-transform: uppercase;
+}
+
+.main {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.page header {
+    text-align: center;
+    width: 77%;
+    margin: 0 auto 21px auto;
+}
+
+.page header .seperator {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page .lead {
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: $copy-color-accent;
+    font-family: $copy-secondary;
+}
+
+.case-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.case-list li {
+    margin-bottom: 1.5em;
+}
+
+.case {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.case__image {
+    width: 100%;
+    height: 268px;
+}
+.case__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.case__title {
+    font-size: 21px;
+    margin: 16px 0 0 0;
+}
+.case__title a {
+    text-decoration: none;
+}
+
+.case__description {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    color: $copy-color-accent;
 }

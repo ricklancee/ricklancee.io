@@ -4,10 +4,10 @@
     <title>Rick Lancee | design student, geek and front-end enthusiast</title>
     <description>I&#39;m a design student, geek and front-end enthusiast. I&#39;m mainly interested in design, progressive web apps and front-end tooling.
 </description>
-    <link>http://localhost:3000/</link>
-    <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jun 2016 21:16:13 +0200</pubDate>
-    <lastBuildDate>Mon, 06 Jun 2016 21:16:13 +0200</lastBuildDate>
+    <link>http://ricklancee.gituhub.io/ricklancee.io/</link>
+    <atom:link href="http://ricklancee.gituhub.io/ricklancee.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 06 Jun 2016 21:23:06 +0200</pubDate>
+    <lastBuildDate>Mon, 06 Jun 2016 21:23:06 +0200</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -15,7 +15,7 @@
         <description>&lt;p&gt;For a class project we created a memory game where users had to remember where a prairie dog – the animal we chose – came out of his hole in the ground. The goal was to increase awareness and engagement of “hidden” animals. Animals that were not very popular with the general audience. &lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
-    &lt;source src=&quot;http://localhost:3000/assets/images/prairietorrium/popup.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;http://ricklancee.gituhub.io/ricklancee.io/assets/images/prairietorrium/popup.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;&lt;em&gt;User would have to remember that holes where the prairie dog came out of to continue&lt;/em&gt;&lt;/p&gt;
@@ -25,14 +25,14 @@
 &lt;p&gt;Each level that you progress though you would move up a step in a virtual arena, you won if the reached the top. &lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;http://localhost:3000/assets/images/prairietorrium/levels.jpg&quot; alt=&quot;The different levels&quot; /&gt;
+    &lt;img src=&quot;http://ricklancee.gituhub.io/ricklancee.io/assets/images/prairietorrium/levels.jpg&quot; alt=&quot;The different levels&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;em&gt;The different levels in the game&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:3000/case/prairietorrium</link>
-        <guid isPermaLink="true">http://localhost:3000/case/prairietorrium</guid>
+        <link>http://ricklancee.gituhub.io/ricklancee.io/case/prairietorrium</link>
+        <guid isPermaLink="true">http://ricklancee.gituhub.io/ricklancee.io/case/prairietorrium</guid>
         
         
         <category>case</category>
@@ -44,7 +44,7 @@
         <description>&lt;p&gt;&lt;a href=&quot;http://ricklancee.github.io/overwatch-timeline/&quot;&gt;http://ricklancee.github.io/overwatch-timeline/&lt;/a&gt;&lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
-    &lt;source src=&quot;http://localhost:3000/assets/images/overwatch/timeline.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;http://ricklancee.gituhub.io/ricklancee.io/assets/images/overwatch/timeline.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;As an excercise i created an interactive time line about the story of the game &lt;a href=&quot;http://playoverwatch.com&quot;&gt;overwatch&lt;/a&gt;. My goal here was to create a interactive experience at 60 frames per second in the browser. Using techniques like a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Games/Anatomy&quot;&gt;game loop&lt;/a&gt; and &lt;a href=&quot;http://codepen.io/rachsmith/post/animation-tip-lerp&quot;&gt;lerping&lt;/a&gt; for the animations.&lt;/p&gt;
@@ -54,8 +54,8 @@
 &lt;p&gt;The demo works great in Google Chrome but in other browsers not so much. In IE or Edge it doesn’t work at all, and in firefox the scrolling is really slow. However it was not my intent to create a cross browser experience it would have been nice it worked across all major browsers. &lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:3000/case/overwatch-timeline</link>
-        <guid isPermaLink="true">http://localhost:3000/case/overwatch-timeline</guid>
+        <link>http://ricklancee.gituhub.io/ricklancee.io/case/overwatch-timeline</link>
+        <guid isPermaLink="true">http://ricklancee.gituhub.io/ricklancee.io/case/overwatch-timeline</guid>
         
         
         <category>case</category>
@@ -67,7 +67,7 @@
         <description>&lt;p&gt;Darkest nights was a short horror minigame that we (Bart van Dongen, Wesley Hölzel and me) made during a 3 day game design cource at school. After some brainstorming we came up with the idea to make a horror game.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;http://localhost:3000/assets/images/darkestnights/txt.png&quot; alt=&quot;The introduction text of the game&quot; /&gt;
+    &lt;img src=&quot;http://ricklancee.gituhub.io/ricklancee.io/assets/images/darkestnights/txt.png&quot; alt=&quot;The introduction text of the game&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;em&gt;This intro text of the game&lt;/em&gt;&lt;/p&gt;
@@ -79,7 +79,7 @@
 &lt;p&gt;The monsters in the game can be stunned by shining your flashlight on them if your close, but they will continue to move a short time after you go away. &lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
-    &lt;source src=&quot;http://localhost:3000/assets/images/darkestnights/nights.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;http://ricklancee.gituhub.io/ricklancee.io/assets/images/darkestnights/nights.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;&lt;em&gt;An enemy stuned by the flashlight&lt;/em&gt;&lt;/p&gt;
@@ -87,8 +87,8 @@
 &lt;p&gt;The game was really fun to make, Bart did the artwork in the game which game out really nice and Me and Wesley did most of the programming of the game. The game was quite a success because people who played it were genuinely scared.&lt;/p&gt;
 </description>
         <pubDate>Sat, 04 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:3000/case/darkest-nights</link>
-        <guid isPermaLink="true">http://localhost:3000/case/darkest-nights</guid>
+        <link>http://ricklancee.gituhub.io/ricklancee.io/case/darkest-nights</link>
+        <guid isPermaLink="true">http://ricklancee.gituhub.io/ricklancee.io/case/darkest-nights</guid>
         
         
         <category>case</category>
@@ -100,7 +100,7 @@
         <description>&lt;p&gt;Explore Amsterdam was for an school project where the students had to design an app or website that used the information of the Internation Student Guide of amsterdam. After a concepting process my idea was to create an app where users would be presented with a set of cards. On these cards where places of interest that the user could visit. &lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
-    &lt;source src=&quot;http://localhost:3000/assets/images/explore/explore.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;http://ricklancee.gituhub.io/ricklancee.io/assets/images/explore/explore.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
 &lt;p&gt;&lt;em&gt;The application in use&lt;/em&gt;&lt;/p&gt;
@@ -112,8 +112,8 @@
 &lt;p&gt;Working demo: &lt;a href=&quot;https://ricklancee.github.io/explore-amsterdam/&quot;&gt;https://ricklancee.github.io/explore-amsterdam/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:3000/case/explore-amsterdam</link>
-        <guid isPermaLink="true">http://localhost:3000/case/explore-amsterdam</guid>
+        <link>http://ricklancee.gituhub.io/ricklancee.io/case/explore-amsterdam</link>
+        <guid isPermaLink="true">http://ricklancee.gituhub.io/ricklancee.io/case/explore-amsterdam</guid>
         
         
         <category>case</category>
@@ -125,8 +125,8 @@
         <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:3000/case/buddy</link>
-        <guid isPermaLink="true">http://localhost:3000/case/buddy</guid>
+        <link>http://ricklancee.gituhub.io/ricklancee.io/case/buddy</link>
+        <guid isPermaLink="true">http://ricklancee.gituhub.io/ricklancee.io/case/buddy</guid>
         
         
         <category>case</category>
@@ -140,8 +140,8 @@
 &lt;p&gt;Bla bla bla content…&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 May 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:3000/case/sporters</link>
-        <guid isPermaLink="true">http://localhost:3000/case/sporters</guid>
+        <link>http://ricklancee.gituhub.io/ricklancee.io/case/sporters</link>
+        <guid isPermaLink="true">http://ricklancee.gituhub.io/ricklancee.io/case/sporters</guid>
         
         
         <category>case</category>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rick Lancee | design student, geek and front-end enthusiast</title>
+    <title>Rick Lancee | Design student, geek and front-end enthusiast</title>
     <description>I&#39;m a design student, geek and front-end enthusiast. I&#39;m mainly interested in design, progressive web apps and front-end tooling.
 </description>
     <link>https://ricklancee.github.io/ricklancee.io/</link>
     <atom:link href="https://ricklancee.github.io/ricklancee.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jun 2016 09:42:56 +0200</pubDate>
-    <lastBuildDate>Tue, 07 Jun 2016 09:42:56 +0200</lastBuildDate>
+    <pubDate>Tue, 07 Jun 2016 13:16:08 +0200</pubDate>
+    <lastBuildDate>Tue, 07 Jun 2016 13:16:08 +0200</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -20,9 +20,7 @@
 
 &lt;p&gt;&lt;em&gt;User would have to remember that holes where the prairie dog came out of to continue&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The game constisted of 6 level which increased in difficulty each level. It had a minimal requirement of two people. People played against each other and the fastest person won.&lt;/p&gt;
-
-&lt;p&gt;Each level that you progress though you would move up a step in a virtual arena, you won when you reach the top. &lt;/p&gt;
+&lt;p&gt;The game consisted  of 6 levels which increased in difficulty each level. It had a minimal requirement of two people. People played against each other and the fastest person won. Each level that you progress though you would move up a step in a virtual arena, you won when you reach the top. &lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/prairietorrium/levels.jpg&quot; alt=&quot;The different levels&quot; /&gt;
@@ -47,9 +45,9 @@
     &lt;source src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/overwatch/timeline.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
-&lt;p&gt;As an excercise i created an interactive time line about the story of the game &lt;a href=&quot;http://playoverwatch.com&quot;&gt;overwatch&lt;/a&gt;. My goal here was to create a interactive experience at 60 frames per second in the browser. Using techniques like a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Games/Anatomy&quot;&gt;game loop&lt;/a&gt; and &lt;a href=&quot;http://codepen.io/rachsmith/post/animation-tip-lerp&quot;&gt;lerping&lt;/a&gt; for the animations.&lt;/p&gt;
+&lt;p&gt;As an exercise i created an interactive time line about the story of the game &lt;a href=&quot;http://playoverwatch.com&quot;&gt;overwatch&lt;/a&gt;. My goal here was to create a interactive experience at 60 frames per second in the browser. Using techniques like a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Games/Anatomy&quot;&gt;game loop&lt;/a&gt; and &lt;a href=&quot;http://codepen.io/rachsmith/post/animation-tip-lerp&quot;&gt;lerping&lt;/a&gt; for the animations.&lt;/p&gt;
 
-&lt;p&gt;I managed to achieve my goal of 60 frame per second by using the performant css and javacript. The Javascript part has only one purpose; to calculate numbers about where you currently are, and where you need to go. The only DOM interaction is setting a &lt;code&gt;transform&lt;/code&gt; attribute on the container. Which results in smooth animations.   &lt;/p&gt;
+&lt;p&gt;I managed to achieve my goal of 60 frame per second by using the performant css and javacript. The Javascript has only one purpose; to calculate numbers about where you currently are, and where you need to go. The only DOM interaction is setting a &lt;code&gt;transform&lt;/code&gt; attribute on the container. Which results in smooth animations.   &lt;/p&gt;
 
 &lt;p&gt;The demo works great in Google Chrome but in other browsers not so much. In IE or Edge it doesn’t work at all, and in firefox the scrolling is really slow. However it was not my intent to create a cross browser experience it would have been nice it worked across all major browsers. — but it would have been nice.&lt;/p&gt;
 </description>
@@ -64,7 +62,7 @@
     
       <item>
         <title>Darkest Nights</title>
-        <description>&lt;p&gt;Darkest nights was a short horror minigame that we (Bart van Dongen, Wesley Hölzel and me) made during a 3 day game design program at school. After some brainstorming we came up with the idea to make a horror game.&lt;/p&gt;
+        <description>&lt;p&gt;Darkest nights was a short horror mini-game that we (Bart van Dongen, Wesley Hölzel and me) made during a 3 day game design program at school. After some brainstorming we came up with the idea to make a horror game.&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/darkestnights/txt.png&quot; alt=&quot;The introduction text of the game&quot; /&gt;
@@ -72,7 +70,7 @@
 
 &lt;p&gt;&lt;em&gt;This intro text of the game&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;In the game you are “Tet”, who is looking for his teddy bear, “Teddy” in the middle of the night. Since teddy is still a litle kid everything looks scary in the dark and his imagination runs wild. &lt;/p&gt;
+&lt;p&gt;In the game you are “Tet”, who is looking for his teddy bear, “Teddy” in the middle of the night. Since teddy is still a little kid everything looks scary in the dark and his imagination runs wild. &lt;/p&gt;
 
 &lt;p&gt;The game itself is pretty basic, on each level Teddy is hidden and you have to find him in complete darkness. After each level it will become harder, the rooms will be bigger and there are more monsters to look out for.&lt;/p&gt;
 
@@ -82,7 +80,7 @@
     &lt;source src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/darkestnights/nights.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 
-&lt;p&gt;&lt;em&gt;An enemy stuned by the flashlight&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;An enemy stunned by the flashlight&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The game was really fun to make, Bart did the artwork in the game which turned out really nice, and Me and Wesley did most of the programming. The game was quite a success because people who played it were genuinely scared.&lt;/p&gt;
 </description>
@@ -97,7 +95,7 @@
     
       <item>
         <title>Explore Amsterdam</title>
-        <description>&lt;p&gt;Explore Amsterdam was for an school project where the students had to design an app or website that used the information of the Internation Student Guide of amsterdam. After a concepting process my idea was to create an app where users would be presented with a set of cards. On these cards where places of interest that the user could visit. &lt;/p&gt;
+        <description>&lt;p&gt;Explore Amsterdam was for an school project where the students had to design an app or website that used the information of the International Student Guide of Amsterdam. After a “concepting” process my idea was to create an app where users would be presented with a set of cards. On these cards where places of interest that the user could visit. &lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
     &lt;source src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/explore/explore.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -105,9 +103,9 @@
 
 &lt;p&gt;&lt;em&gt;The application in use&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Places supposed to ranked based on location so relevant nearby places would be on the top of the card stack. However due to time contstraits and i was not able to include location based cards. &lt;/p&gt;
+&lt;p&gt;Places supposed to ranked based on location so relevant nearby places would be on the top of the card stack. However due to time constraints and I was not able to include location based cards. &lt;/p&gt;
 
-&lt;p&gt;The application itself was really fun to make, cards where swipable on mobile so you could dismiss them. You could favorite cards so you can find them later on again. One issue was that the library i used for swiping was nice, but it did not allow me to do certain animation that i would have like to incorperate into the app. Such as the card expanding on click. Next time however i will not opt for using a library, but rather create my own to solve the problem. &lt;/p&gt;
+&lt;p&gt;The application itself was really fun to make, cards where swipeable on mobile so you could dismiss them. You could favourite cards so you can find them later on again. One issue was that the library I used for swiping was nice, but it did not allow me to do certain animation that I would have like to incorporate into the app. Such as the card expanding on click. Next time however i will not opt for using a library, but rather create my own to solve the problem. &lt;/p&gt;
 
 &lt;p&gt;Working demo: &lt;a href=&quot;https://ricklancee.github.io/explore-amsterdam/&quot;&gt;https://ricklancee.github.io/explore-amsterdam/&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -122,11 +120,11 @@
     
       <item>
         <title>BUDDY an E-Health app</title>
-        <description>&lt;p&gt;Buddy is an app we created with 4 students. The goal of the app was to support patients of a chronic ilness in their lives. As a group we chose to make an app for people with Social Anxiety Disorder. &lt;/p&gt;
+        <description>&lt;p&gt;Buddy is an app we created with 4 students. The goal of the app was to support patients of a chronic illness in their lives. As a group we chose to make an app for people with Social Anxiety Disorder. &lt;/p&gt;
 
-&lt;p&gt;We went trough a couple of iteration of the application and in the end we decided we would focus on a type of cognative therapy called guided imagery.&lt;/p&gt;
+&lt;p&gt;We went trough a couple of iteration of the application and in the end we decided we would focus on a type of cognitive therapy called guided imagery.&lt;/p&gt;
 
-&lt;p&gt;Our app was intented to help with the at home therapy process. Users would use our app in combination with e-senors that measure heartrate and breathing. You would use the app to give you feedback during your therapy sessions. The app would give you bio-feedback which tells you if you were getting stressed or not.&lt;/p&gt;
+&lt;p&gt;Our app was indented to help with the at home therapy process. Users would use our app in combination with E-sensors that measure heart rate and breathing. You would use the app to give you feedback during your therapy sessions. The app would give you bio-feedback which tells you if you were getting stressed or not.&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/buddy/FLOWCHART.png&quot; alt=&quot;The flowchart of the application&quot; /&gt;
@@ -134,7 +132,7 @@
 
 &lt;p&gt;&lt;em&gt;The flowchart of the application&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The final product didn’t include actual sensors, these were faked for the demonstration. I would have liked to include these sensors in a working prototype however due to time contstraints this was not possible. In the end i learned a lot from the prototpying tool Flinto, which helped us prototype animation for the final product.&lt;/p&gt;
+&lt;p&gt;The final product didn’t include actual sensors, these were faked for the demonstration. I would have liked to include these sensors in a working prototype however due to time constraints this was not possible. In the end i learned a lot from the prototyping tool Flinto, which helped us prototype the animations for the final product.&lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
     &lt;source src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/buddy/buddy.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -155,7 +153,7 @@
     
       <item>
         <title>MOTI a Motivation App</title>
-        <description>&lt;p&gt;The MOTI app was an mobile app that helped olympic rowers stay connected an motivated with their teamates and coach. The goal of the app was to create something that wouwld benifit olympic athletes in journey towards the olympics.&lt;/p&gt;
+        <description>&lt;p&gt;The MOTI app was an mobile app that helped Olympic rowers stay connected an motivated with their teammates and coach. The goal of the app was to create something that would benefit Olympic athletes in journey towards the Olympics.&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/oGuEnXagr-U&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -170,7 +168,7 @@
 
 &lt;p&gt;&lt;em&gt;The main screens of the application&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Everyday the atheletes have to write down certain pieces of data about themselfs. We as a team wanted to use this data in our application. In our final prototype users of the app would be promted daily to input their data. However in a real world application this data could be transmitted through certain devices like a heartrate sensor.&lt;/p&gt;
+&lt;p&gt;Everyday the athletes have to write down certain pieces of data about themselves. We as a team wanted to use this data in our application. In our final prototype users of the app would be prompted daily to input their data. However in a real world application this data could be transmitted through certain devices like a heart rate sensor.&lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
     &lt;source src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/moti/gegevens.mp4&quot; type=&quot;video/mp4&quot; /&gt;
@@ -178,7 +176,7 @@
 
 &lt;p&gt;&lt;em&gt;Filling in daily data&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The coach of the team could keep in touch and checkup on the data of his team. He could decide if things were going OK, or when things were going poorly. &lt;/p&gt;
+&lt;p&gt;The coach of the team could keep in touch and check up on the data of his team. He could decide if things were going OK, or when things were going poorly. &lt;/p&gt;
 
 &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
     &lt;source src=&quot;https://ricklancee.github.io/ricklancee.io/assets/images/moti/messages.mp4&quot; type=&quot;video/mp4&quot; /&gt;

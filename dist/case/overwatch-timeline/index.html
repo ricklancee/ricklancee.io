@@ -8,7 +8,7 @@
     <title>Overwatch Timeline</title>
     <meta name="description" content="I made an interactive timeline based on the story of the game Overwatch.">
     <link rel="canonical" href="https://ricklancee.github.io/ricklancee.io/case/overwatch-timeline">
-    <link rel="alternate" type="application/rss+xml" title="Rick Lancee | design student, geek and front-end enthusiast" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Rick Lancee | Design student, geek and front-end enthusiast" href="/feed.xml">
     <link rel="shortcut icon" href="https://ricklancee.github.io/ricklancee.io/favicon.ico">
     <link rel="stylesheet" href="https://ricklancee.github.io/ricklancee.io/assets/css/main.css">
 </head>
@@ -50,9 +50,9 @@
     <source src="https://ricklancee.github.io/ricklancee.io/assets/images/overwatch/timeline.mp4" type="video/mp4" />
 </video>
 
-<p>As an excercise i created an interactive time line about the story of the game <a href="http://playoverwatch.com">overwatch</a>. My goal here was to create a interactive experience at 60 frames per second in the browser. Using techniques like a <a href="https://developer.mozilla.org/en-US/docs/Games/Anatomy">game loop</a> and <a href="http://codepen.io/rachsmith/post/animation-tip-lerp">lerping</a> for the animations.</p>
+<p>As an exercise i created an interactive time line about the story of the game <a href="http://playoverwatch.com">overwatch</a>. My goal here was to create a interactive experience at 60 frames per second in the browser. Using techniques like a <a href="https://developer.mozilla.org/en-US/docs/Games/Anatomy">game loop</a> and <a href="http://codepen.io/rachsmith/post/animation-tip-lerp">lerping</a> for the animations.</p>
 
-<p>I managed to achieve my goal of 60 frame per second by using the performant css and javacript. The Javascript part has only one purpose; to calculate numbers about where you currently are, and where you need to go. The only DOM interaction is setting a <code>transform</code> attribute on the container. Which results in smooth animations.   </p>
+<p>I managed to achieve my goal of 60 frame per second by using the performant css and javacript. The Javascript has only one purpose; to calculate numbers about where you currently are, and where you need to go. The only DOM interaction is setting a <code>transform</code> attribute on the container. Which results in smooth animations.   </p>
 
 <p>The demo works great in Google Chrome but in other browsers not so much. In IE or Edge it doesn’t work at all, and in firefox the scrolling is really slow. However it was not my intent to create a cross browser experience it would have been nice it worked across all major browsers. — but it would have been nice.</p>
 

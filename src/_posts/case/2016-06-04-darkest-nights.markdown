@@ -6,7 +6,7 @@ image: /assets/images/cases/case-darkest-nights.jpg
 description: A mini horror game me and 2 other students from the HvA made over a period of 3 days for a short game design course.
 ---
 
-Darkest nights was a short horror minigame that we (Bart van Dongen, Wesley Hölzel and me) made during a 3 day game design cource at school. After some brainstorming we came up with the idea to make a horror game.
+Darkest nights was a short horror minigame that we (Bart van Dongen, Wesley Hölzel and me) made during a 3 day game design program at school. After some brainstorming we came up with the idea to make a horror game.
 
 <figure>
     <img src="{{ site.baseurl | prepend: site.url }}/assets/images/darkestnights/txt.png" alt="The introduction text of the game">
@@ -26,4 +26,4 @@ The monsters in the game can be stunned by shining your flashlight on them if yo
 
 *An enemy stuned by the flashlight*
 
-The game was really fun to make, Bart did the artwork in the game which game out really nice and Me and Wesley did most of the programming of the game. The game was quite a success because people who played it were genuinely scared.
+The game was really fun to make, Bart did the artwork in the game which turned out really nice, and Me and Wesley did most of the programming. The game was quite a success because people who played it were genuinely scared.

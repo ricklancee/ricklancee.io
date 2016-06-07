@@ -14,9 +14,9 @@ For a class project we created a memory game where users had to remember where a
 
 *User would have to remember that holes where the prairie dog came out of to continue*
 
-The game constisted of 6 level which increased in difficulty each level on wards. It had a minimal requirement of two people. People played against each other and the person who was fastest would win.
+The game constisted of 6 level which increased in difficulty each level. It had a minimal requirement of two people. People played against each other and the fastest person won.
 
-Each level that you progress though you would move up a step in a virtual arena, you won if the reached the top. 
+Each level that you progress though you would move up a step in a virtual arena, you won when you reach the top. 
 
 <figure>
     <img src="{{ site.baseurl | prepend: site.url }}/assets/images/prairietorrium/levels.jpg" alt="The different levels">

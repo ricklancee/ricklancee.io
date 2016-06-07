@@ -6,6 +6,35 @@ image: /assets/images/cases/case-sporters.jpg
 description: For class project we had to design an app that would support olympic rowers in their quest towards a gold medal.
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oGuEnXagr-U" frameborder="0" allowfullscreen></iframe>
+The MOTI app was an mobile app that helped olympic rowers stay connected an motivated with their teamates and coach. The goal of the app was to create something that wouwld benifit olympic athletes in journey towards the olympics.
 
-Bla bla bla content...
+<figure>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oGuEnXagr-U" frameborder="0" allowfullscreen></iframe>
+</figure>
+*The MOTI product video*
+
+We wanted to create a simple application, one that was easy to use and didn't have too much complexity. We opted for only 3 main screens, the homescreen where users could see how the rest of the team was doing, a profile screen where users could see their own data and a chat screen where the coach and athletes could keep in touch with each other.
+
+<figure>
+    <img src="{{ site.baseurl | prepend: site.url }}/assets/images/moti/screens.jpg" alt="The main screens of the application">
+</figure>
+
+*The main screens of the application*
+
+Everyday the atheletes have to write down certain pieces of data about themselfs. We as a team wanted to use this data in our application. In our final prototype users of the app would be promted daily to input their data. However in a real world application this data could be transmitted through certain devices like a heartrate sensor.
+
+<video autoplay="true" loop="true">
+    <source src="{{ site.baseurl | prepend: site.url }}/assets/images/moti/gegevens.mp4" type="video/mp4">
+</video>
+
+*Filling in daily data*
+
+The coach of the team could keep in touch and checkup on the data of his team. He could decide if things were going OK, or when things were going poorly. 
+
+<video autoplay="true" loop="true">
+    <source src="{{ site.baseurl | prepend: site.url }}/assets/images/moti/messages.mp4" type="video/mp4">
+</video>
+
+*Coach messages are displayed on the homescreen*
+
+Working demo: http://ricklancee.github.io/moti-app/

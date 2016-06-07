@@ -3,10 +3,10 @@ layout: post
 category: case
 title:  "MOTI a Motivation App"
 image: /assets/images/cases/case-sporters.jpg
-description: For class project we had to design an app that would support olympic rowers in their quest towards a gold medal.
+description: For class project we had to design an app that would support Olympic rowers in their quest towards a gold medal.
 ---
 
-The MOTI app was an mobile app that helped olympic rowers stay connected an motivated with their teamates and coach. The goal of the app was to create something that wouwld benifit olympic athletes in journey towards the olympics.
+The MOTI app was an mobile app that helped Olympic rowers stay connected an motivated with their teammates and coach. The goal of the app was to create something that would benefit Olympic athletes in journey towards the Olympics.
 
 <figure>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/oGuEnXagr-U" frameborder="0" allowfullscreen></iframe>
@@ -21,7 +21,7 @@ We wanted to create a simple application, one that was easy to use and didn't ha
 
 *The main screens of the application*
 
-Everyday the atheletes have to write down certain pieces of data about themselfs. We as a team wanted to use this data in our application. In our final prototype users of the app would be promted daily to input their data. However in a real world application this data could be transmitted through certain devices like a heartrate sensor.
+Everyday the athletes have to write down certain pieces of data about themselves. We as a team wanted to use this data in our application. In our final prototype users of the app would be prompted daily to input their data. However in a real world application this data could be transmitted through certain devices like a heart rate sensor.
 
 <video autoplay="true" loop="true">
     <source src="{{ site.baseurl | prepend: site.url }}/assets/images/moti/gegevens.mp4" type="video/mp4">
@@ -29,7 +29,7 @@ Everyday the atheletes have to write down certain pieces of data about themselfs
 
 *Filling in daily data*
 
-The coach of the team could keep in touch and checkup on the data of his team. He could decide if things were going OK, or when things were going poorly. 
+The coach of the team could keep in touch and check up on the data of his team. He could decide if things were going OK, or when things were going poorly. 
 
 <video autoplay="true" loop="true">
     <source src="{{ site.baseurl | prepend: site.url }}/assets/images/moti/messages.mp4" type="video/mp4">

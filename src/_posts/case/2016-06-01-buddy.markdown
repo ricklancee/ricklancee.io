@@ -3,14 +3,14 @@ layout: post
 category: case
 title:  "BUDDY an E-Health app"
 image: /assets/images/cases/case-buddy.jpg
-description: For class project we had to design an app that would support patients with a chronic ilness, we decided on Social Anxiety discorders.
+description: For class project we had to design an app that would support patients with a chronic illness, we decided on Social Anxiety disorders.
 ---
 
-Buddy is an app we created with 4 students. The goal of the app was to support patients of a chronic ilness in their lives. As a group we chose to make an app for people with Social Anxiety Disorder. 
+Buddy is an app we created with 4 students. The goal of the app was to support patients of a chronic illness in their lives. As a group we chose to make an app for people with Social Anxiety Disorder. 
 
-We went trough a couple of iteration of the application and in the end we decided we would focus on a type of cognative therapy called guided imagery.
+We went trough a couple of iteration of the application and in the end we decided we would focus on a type of cognitive therapy called guided imagery.
 
-Our app was intented to help with the at home therapy process. Users would use our app in combination with e-senors that measure heartrate and breathing. You would use the app to give you feedback during your therapy sessions. The app would give you bio-feedback which tells you if you were getting stressed or not.
+Our app was indented to help with the at home therapy process. Users would use our app in combination with E-sensors that measure heart rate and breathing. You would use the app to give you feedback during your therapy sessions. The app would give you bio-feedback which tells you if you were getting stressed or not.
 
 <figure>
     <img src="{{ site.baseurl | prepend: site.url }}/assets/images/buddy/FLOWCHART.png" alt="The flowchart of the application">
@@ -18,7 +18,7 @@ Our app was intented to help with the at home therapy process. Users would use o
 
 *The flowchart of the application*
 
-The final product didn't include actual sensors, these were faked for the demonstration. I would have liked to include these sensors in a working prototype however due to time contstraints this was not possible. In the end i learned a lot from the prototpying tool Flinto, which helped us prototype animation for the final product.
+The final product didn't include actual sensors, these were faked for the demonstration. I would have liked to include these sensors in a working prototype however due to time constraints this was not possible. In the end i learned a lot from the prototyping tool Flinto, which helped us prototype the animations for the final product.
 
 
 <video autoplay="true" loop="true">

@@ -84,6 +84,7 @@ figure img {
     max-width: 600px;
     width: 100%;
     margin: 52px auto;
+    padding: 0 16px;
 }
 .site-footer {
     max-width: 600px;
@@ -159,13 +160,14 @@ figure img {
 }
 
 .case {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .case__image {
     width: 100%;
-    height: 268px;
+    max-height: 268px;
 }
 .case__image img {
     width: 100%;
@@ -196,6 +198,7 @@ figure.rounded {
 }
 
 .post {
+    padding: 0 16px;
     font-size: 18px;
     font-family: $copy-secondary;
 }
@@ -203,4 +206,11 @@ figure.rounded {
 .post img {
     display: block;
     max-width: 100%;
+}
+
+@media (max-width: 399px) {
+    .case__title,
+    .case__description {
+        padding: 0 16px;
+    }
 }
